@@ -94,7 +94,7 @@ get_header();?>
                     <p>Morbi et tincidunt nibh. Mauris at neque congue, sagittis dui tempus, posuere nunc. Vivamus ac enim ut quam mattis posuere. </p>
                     
                     <div class="button button__ghost button__fullwidth button__prompt button__prompt__down reveal-context">
-                        <span>Learn More</span>
+                        <span>Learn Moree</span>
                         
                     </div>
                                 
