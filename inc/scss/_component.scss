@@ -1,0 +1,162 @@
+/*! == COMPONENTS == */
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 1em 4em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.08em;
+    background: $brand-pink;
+    color: white;
+    transition: color 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: $brand-dark-sand;
+    }
+    &:before {
+            @include childOverlay;
+            width: 0;
+            background: $brand-sand;
+            transition: width 0.3s ease;
+    }
+    &:hover:before {
+        width:100%
+    }
+    span {
+        position: relative;
+        z-index: 10;
+    }
+    &__prompt {
+        text-align: left;
+        padding:1em 6em 1em 1em;
+        &:after {
+            position: absolute;
+            top:    0.5em;
+            right: 1em; 
+            content: '\f054';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 600;
+            font-size: 1.5em;
+        }
+    }
+    &__ghost {
+        background:transparent;
+        border:2px solid $brand-pink;
+        color: $brand-pink;
+        &:hover {
+            color: $brand-sand;
+        }
+        &:before {
+            background:$brand-pink;            
+        }        
+    }
+    
+    &__fullwidth {
+        display: block;
+        text-align: center;
+        padding:1em 2em 2em;
+        &:after {
+            top:initial;
+            bottom:0;
+            left:1em;
+            content: '\f078';
+        }     
+    }
+    &__dark-hover {
+        &:hover {
+            color: $brand-sand;
+        }
+        &:before {
+            background:$brand-dark-sand;            
+        }
+    }
+}
+
+#clock {
+    position: absolute;
+    top: -1.5em;
+    left: 50%;
+    margin-left: -0.7em; 
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    path {
+        stroke: $brand-pink;
+        stroke-width: 50;
+        fill:none;
+    }
+    #min,
+    #hour{
+        stroke: $brand-pink;
+        stroke-width: 50;
+        transform: rotate(0deg);
+        transform-origin:50%;
+        transition: transform 1s ease;
+        transition-delay: 1s;
+    }
+}
+
+.hour:hover .time-wrapper > #clock {
+    opacity: 1;
+}
+
+#hour-1 #hour { transform: rotate(30deg);}
+#hour-2 #hour { transform: rotate(60deg);}
+#hour-3 #hour { transform: rotate(90deg);}
+#hour-4 #hour { transform: rotate(120deg);}
+#hour-5 #hour { transform: rotate(150deg);}
+#hour-6 #hour { transform: rotate(180deg);}
+#hour-7 #hour { transform: rotate(210deg);}
+#hour-8 #hour { transform: rotate(240deg);}
+#hour-9 #hour { transform: rotate(270deg);}
+#hour-10 #hour { transform: rotate(300deg);}
+#hour-11 #hour { transform: rotate(330deg);}
+#hour-12 #hour { transform: rotate(0deg);}
+#hour-13 #hour { transform: rotate(30deg);}
+#hour-14 #hour { transform: rotate(60deg);}
+#hour-15 #hour { transform: rotate(90deg);}
+#hour-16 #hour { transform: rotate(120deg);}
+#hour-17 #hour { transform: rotate(150deg);}
+#hour-18 #hour{ transform: rotate(180deg);}
+#hour-19 #hour { transform: rotate(210deg);}
+#hour-20 #hour { transform: rotate(240deg);}
+#hour-21 #hour { transform: rotate(270deg);}
+#hour-22 #hour { transform: rotate(300deg);}
+#hour-23 #hour { transform: rotate(330deg);}
+
+
+.quote {
+    padding: 1em 2em;
+    p:nth-of-type(2) {
+        color:$brand-pink;
+    }
+}
+
+.time-icon svg#clock {
+    position: relative;
+    left: 0;
+    top: -3px;
+    margin: 0;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
