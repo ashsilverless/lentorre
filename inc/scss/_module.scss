@@ -273,7 +273,8 @@
     &__item {
         @include backgroundCover;
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(5em auto 5em);
+        height: calc(100% - 6px);
         min-height: 25em;
         padding: 2em;
         margin: 3px;
