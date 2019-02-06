@@ -14,7 +14,7 @@ var today = currentdate.getHours();
 
 // Aadd zero in front of numbers < 10
 function mins(i) {
-    if (i < 10) {i = "0" + i};  
+    if (i < 10) {i = "0" + i};
     return i;
 }
 var minuterotation = mins * 6;
@@ -24,13 +24,13 @@ var hourrotation = hours * 30;
 $("html").delay(100).queue(function(next) {
     $(this).addClass("loaded");
     next();
-    $('div.current').find('#hour').css({ 
-        'transform': 'rotate('+hourrotation+'deg)', 
+    $('div.current').find('#hour').css({
+        'transform': 'rotate('+hourrotation+'deg)',
     });
-    $('div.current').find('#min').css({ 
-        'transform': 'rotate('+minuterotation+'deg)', 
+    $('div.current').find('#min').css({
+        'transform': 'rotate('+minuterotation+'deg)',
     });
-    
+
 });
 
 /* HANDLER FOR TIMELINE LINKS*/
@@ -47,26 +47,30 @@ $('.hour').on('click', function () {
 });
 
 $(document).ready(function( $ ) {
-    var selectedHour = localStorage.getItem('new');   
-    var currentHour = localStorage.getItem('current');   
-    $(selectedHour).addClass('active'); 
+    var selectedHour = localStorage.getItem('new');
+    var currentHour = localStorage.getItem('current');
+    $(selectedHour).addClass('active');
 
 if ($(".hour").hasClass("active")) {
     $('.timeline').addClass('clicked');
     $('.hour.active').find('.time-wrapper').attr('id', 'value');
 }
 
+$('.header-inner__brand').click(function() {
+  localStorage.clear();
+});
+
 });
 
 /* ADD CLASS ON SCROLL*/
-	
-	$(window).scroll(function() {    
+
+	$(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 200) {
-        $("header").addClass("scrolled");        
+        $("header").addClass("scrolled");
     } else {
-        $("header").removeClass("scrolled");        
+        $("header").removeClass("scrolled");
     }
 });
 
@@ -80,18 +84,18 @@ var owl = $("#testimonial");
     owl.trigger('owl.prev');
   })
 
-$(".toggle").click(function() {   
-  	$('.toggle.active').removeClass("active"); 
-    $(this).addClass("active");   
+$(".toggle").click(function() {
+  	$('.toggle.active').removeClass("active");
+    $(this).addClass("active");
 });
 
-//ADD CLASS ON PAGE LOAD 
+//ADD CLASS ON PAGE LOAD
 
 $(document).ready(function( $ ) {
   $( ".toggle" ).first().addClass( "active" );
 });
 
-// GLOBAL OWL CAROUSEL SETTINGS 
+// GLOBAL OWL CAROUSEL SETTINGS
 
 $('.owl-carousel').owlCarousel({
     animateOut: 'fadeOut',
@@ -116,8 +120,8 @@ $('.owl-carousel').owlCarousel({
 /* CLASS AND FOCUS ON CLICK */
 
 $('.header-inner__trigger').click(function() {
-  $('.hamburger').toggleClass('is-active');  
-  $("header").toggleClass("menuOpen");  
+  $('.hamburger').toggleClass('is-active');
+  $("header").toggleClass("menuOpen");
 });
 
 
@@ -159,7 +163,7 @@ $(window).scroll(function() {
     $(".headline").css({
         transform: "translate(0px, " + wScroll / 2.5 + "%)"
     });
-  
+
 });
 
 // ========== Fade Headline Controller
@@ -168,7 +172,7 @@ var header = $('.headline');
 var range = 200;
 
 $(window).on('scroll', function () {
-  
+
   var scrollTop = $(this).scrollTop(),
       height = header.outerHeight(),
       offset = height / 0.51,
@@ -181,12 +185,12 @@ $(window).on('scroll', function () {
   } else if ( calc < '0' ) {
     header.css({ 'opacity': 0 });
   }
-  
+
 });
 
 });//Don't remove ---- end of jQuery wrapper
 
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function(event) {
 
 var currentdate = new Date();
 var hours = (currentdate.getHours() < 10? '0' : '') + currentdate.getHours();
@@ -195,7 +199,7 @@ var today = currentdate.getHours();
 
 // Aadd zero in front of numbers < 10
 function mins(i) {
-    if (i < 10) {i = "0" + i};  
+    if (i < 10) {i = "0" + i};
     return i;
 }
 
@@ -217,15 +221,15 @@ for(var i=0; i < times; i++){
         var element = document.getElementById("hour-" + begintime);
         element.classList.add("current");
 
-    }   
+    }
 begintime++;
 endtime++;
 }
 
 var grabTime = document.getElementById("value").firstChild.innerHTML;
 var contentPanel = document.getElementById("timeHolder");
-  
-if (grabTime.length >= 3) {  
+
+if (grabTime.length >= 3) {
   contentPanel.innerHTML= grabTime;
 }
 
@@ -234,15 +238,3 @@ contentPanel.textContent = "Right now";
 }
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
