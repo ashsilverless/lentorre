@@ -91,7 +91,7 @@ get_header();?>
                 
                 <div class="col-6 vertical-center">
                     
-                    <p>Morbi et tincidunt nibh. Mauris at neque congue, sagittis dui tempus, posuere nunc. Vivamus ac enim ut quam mattis posuere. </p>
+                    <p><?php the_field('teaser');?></p>
                     
                     <div class="button button__ghost button__fullwidth button__prompt button__prompt__down reveal-context">
                         <span>Learn More</span>
