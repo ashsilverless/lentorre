@@ -179,13 +179,14 @@ header {
             line-height: 1.2em;
             font-size: 0.8em;
             font-weight: 500;
-            color: white;
+            color: $brand-dark-sand;
         }
     }
     &__brand {
         text-align: center;
         img {
             width: 150px;
+            filter:brightness(40%);
             transition: all 0.3s ease;
         }
     }
@@ -236,9 +237,11 @@ header {
 }
 
 .scrolled {
+
     .header-inner {
         border-bottom: 1px solid $brand-pink;
     }
+
     .header-inner__brand img {
         width:90px;
     }
@@ -254,11 +257,19 @@ header {
     }
 }
 
-.transparent {
+.transparent:not(.scrolled) {
     .header-inner,
     .navigation {
         background:transparent;
         border:none;
+    }
+
+    .header-inner__brand img {
+        filter: brightness(100%);
+    }
+
+    .header-inner__contact p {
+        color: white;
     }
 }
 
