@@ -253,13 +253,10 @@
             background: $brand-light-sand;
             &__map {
                 text-align: center;
-
-                .map {
-                    height:15em;
-                }
             }
+
             svg {
-                height: 12em;
+                height: 15em;
                 margin-bottom: 1em;
                 .cls-1 {
                     fill:$brand-dark-sand;
@@ -269,6 +266,10 @@
                 p:nth-of-type(1) {
                     font-weight: 600;
             }
+        }
+
+        &__content {
+            align-self: center;
         }
     }
 }

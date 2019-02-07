@@ -22,9 +22,9 @@ $mapImg = get_field('map_image', 569);
 
                 <div class="sub-hero__detail__map">
 
-                    <div class="map" style="background-image: url(<?php echo $mapImg['url']; ?>);"></div>
+                    <?php get_template_part( 'template-parts/kenya', 'map' );?>
 
-        <p class="heading-secondary heading-secondary__xs"><?php the_field('location_details', 569);?></p>
+                    <p class="heading-secondary heading-secondary__xs"><?php the_field('location_details', 569);?></p>
 
                 </div>
 
