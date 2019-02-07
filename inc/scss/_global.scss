@@ -281,6 +281,14 @@ header {
         border:none;
     }
 
+    .main-menu a {
+        color: white;
+
+        &:hover {
+            color: $brand-pink;
+        }
+    }
+
     .header-inner__brand img {
         filter: brightness(100%);
     }
