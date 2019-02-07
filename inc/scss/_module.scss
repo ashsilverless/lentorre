@@ -253,6 +253,10 @@
             background: $brand-light-sand;
             &__map {
                 text-align: center;
+
+                .map {
+                    height:15em;
+                }
             }
             svg {
                 height: 12em;
