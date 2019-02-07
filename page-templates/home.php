@@ -83,7 +83,7 @@ get_header();?>
 
                 <div class="col-6 vertical-center">
 
-                    <a href="" class="button button__prompt button__dark-hover">
+                    <a href="/contact" class="button button__prompt button__dark-hover">
                         <span>Book Now</span>
                     </a>
 
