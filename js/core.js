@@ -119,11 +119,14 @@ $('.owl-carousel').owlCarousel({
 
 /* CLASS AND FOCUS ON CLICK */
 
+$('main a').click(function() {
+  $('html').removeClass('loaded');    
+});
+
 $('.header-inner__trigger').click(function() {
   $('.hamburger').toggleClass('is-active');
   $("header").toggleClass("menuOpen");
 });
-
 
 $('.reveal-context').click(function() {
   $('.context-panel').addClass('reveal');

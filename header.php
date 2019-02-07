@@ -21,6 +21,8 @@
 
 <body <?php body_class(); ?>>
 
+<div class="trans"></div>
+
     <div id="page" class="site-wrapper">
 
     <header class="<?php if ( is_page_template ('page-templates/home.php')) { echo 'transparent'; echo ' home';}?>">
