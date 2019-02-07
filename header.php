@@ -20,73 +20,73 @@
 </head>
 
 <body <?php body_class(); ?>>
-    
+
     <div id="page" class="site-wrapper">
 
     <header class="<?php if ( is_page_template ('page-templates/home.php')) { echo 'transparent'; echo ' home';}?>">
-        
+
         <div class="header-inner">
-            
+
             <div class="container">
 
             <div class="row no-gutters">
 
 
-  
+
                     <div class="header-inner__contact">
-                        
+
                             <p><?php the_field('telephone_number', 'option');?></p>
-                            
+
                             <p><?php the_field('email_address', 'option');?></p>
-                            
-                    </div>
-    
-                    <div class="header-inner__brand">
-                        
-                        <?php $brandImg = get_field('logo', 'option');?>
-                        
-                        <a href="<?php echo get_site_url(); ?>">
-                            
-                            <img src="<?php echo $brandImg['url']; ?>"/>
-                            
-                        </a>
-                        
-                    </div>  
-    
-                    <div class="header-inner__trigger hamburger hamburger--collapse">
-                        
-                        <div class="hamburger-box">
-                            
-                            <div class="hamburger-inner"></div>
-                            
-                        </div>
-                        
+
                     </div>
 
-                </div>  
-            
+                    <div class="header-inner__brand">
+
+                        <?php $brandImg = get_field('logo', 'option');?>
+
+                        <a href="<?php echo get_site_url(); ?>">
+
+                            <img src="<?php echo $brandImg['url']; ?>"/>
+
+                        </a>
+
+                    </div>
+
+                    <div class="header-inner__trigger hamburger hamburger--collapse">
+
+                        <div class="hamburger-box">
+
+                            <div class="hamburger-inner"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div><!--r-->
-            
+
         </div>
 
         <div class="navigation">
-            
+
             <div class="container">
-  
+
           <div class="roww">
-      
+
     <?php
-    wp_nav_menu( array( 
-    'theme_location' => 'main-menu', 
-    'container_class' => 'main-menu' ) ); 
-    ?>    
-  
+    wp_nav_menu( array(
+    'theme_location' => 'main-menu',
+    'container_class' => 'main-menu' ) );
+    ?>
+
           </div><!--row-->
-          
-        </div><!--container-->    
-            
+
+        </div><!--container-->
+
         </div><!--navigation-->
 
 </header>
-  
+
   <main>

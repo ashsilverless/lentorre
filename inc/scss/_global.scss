@@ -18,15 +18,15 @@ body {
 }
 
 p {
-  font-weight: 300;  
+  font-weight: 300;
 }
 
 strong {
-  font-weight: 600;    
+  font-weight: 600;
 }
 
 em {
-  font-style: italic; 
+  font-style: italic;
 }
 
 a {
@@ -35,7 +35,7 @@ a {
     &:hover {
         text-decoration: none;
         color: $brand-dark-sand;
-    }  
+    }
 }
 
 img {
@@ -46,7 +46,7 @@ img {
     font-weight: 400;
     &__caps {
         text-transform: uppercase;
-        letter-spacing: 0.15em;          
+        letter-spacing: 0.15em;
     }
     &__light {
         color: white;
@@ -54,36 +54,36 @@ img {
     &__xl {
         font-size: 3em;
     }
-    &__lg {      
+    &__lg {
         font-size: 2.5em;
-    }  
+    }
     &__md {
-        font-size: 1.5em;        
-    }   
+        font-size: 1.5em;
+    }
     &__sm {
-        font-size: 1em;        
+        font-size: 1em;
     }
     &__xs {
-        font-size: 0.75em;        
-    }   
+        font-size: 0.75em;
+    }
     &__bold {
         font-weight: 900;
-    } 
+    }
 }
 
 .heading-secondary {
   font-family: $secondary-font;
   text-transform: uppercase;
-  letter-spacing: 0.15em;  
+  letter-spacing: 0.15em;
   &__xl {}
-  &__lg {}  
-  &__md {}   
+  &__lg {}
+  &__md {}
   &__sm {
-    font-size: 1em;      
+    font-size: 1em;
   }
   &__xs {
     font-size: 0.6em;
-  }      
+  }
 }
 
 .vertical-center {
@@ -163,21 +163,21 @@ header {
         grid-template-columns: 1fr 1fr 1fr;
     }
     &__contact {
-        align-self: center;        
+        align-self: center;
         p {
             margin-bottom: 0;
-            line-height: 1.2em;    
+            line-height: 1.2em;
             font-size: 0.8em;
             font-weight: 500;
         }
     }
     &__brand {
-        text-align: center;     
+        text-align: center;
         img {
             width: 150px;
             opacity: 0.7;
             transition: all 0.3s ease;
-        }   
+        }
     }
     &__trigger {
         text-align: right;
@@ -189,11 +189,11 @@ header {
     position: relative;
     margin-top: -5em;
     z-index: 250;
-    width: 100%;   
+    width: 100%;
     opacity: 0;
     border-bottom: 1px solid hsl(353, 72%, 70%);
     background: hsl(71, 9%, 79%);
-    transition:margin-top 1s ease, background 0.5s ease, opacity 0.5s ease; 
+    transition:margin-top 1s ease, background 0.5s ease, opacity 0.5s ease;
     &.reveal {
         top:100%;
     }
@@ -205,29 +205,29 @@ header {
         grid-template-columns: repeat(6, auto);
         margin: 1em 0;
         padding: 0;
-        text-align: center;  
-        list-style: none;      
+        text-align: center;
+        list-style: none;
     }
     a {
         text-transform: uppercase;
         letter-spacing: 0.09em;
-        color: $brand-dark-sand;   
+        color: $brand-dark-sand;
         transition:color 0.5s ease;
         font-size: 0.9em;
         &:hover {
             color: $brand-pink;
             text-decoration: none;
-        }   
-    } 
+        }
+    }
     .current_page_item > a {
         color: $brand-pink;
-        text-decoration: none;        
-    }  
+        text-decoration: none;
+    }
 }
 
 .scrolled {
     .header-inner {
-        border-bottom: 1px solid $brand-pink;        
+        border-bottom: 1px solid $brand-pink;
     }
     .header-inner__brand img {
         width:90px;
@@ -256,8 +256,8 @@ header {
     .header-inner,
     .navigation {
         background:$brand-sand;
-        border-bottom: 1px solid $brand-pink;         
-    }    
+        border-bottom: 1px solid $brand-pink;
+    }
     .navigation {
         background: hsl(71, 9%, 79%);
     }
@@ -276,7 +276,7 @@ main {
 /*===========FOOTER==========*/
 
 .footer-cta {
-    @include backgroundCover;    
+    @include backgroundCover;
     height: 20em;
     margin: 3px;
     padding: 2em;
@@ -289,7 +289,7 @@ main {
     font-size: 0.75em;
     i {
       margin-right: 1em;
-    }    
+    }
     &__colophon {
       text-align: right;
       a {
@@ -299,8 +299,3 @@ main {
       }
     }
   }
-
-
-
-
-
