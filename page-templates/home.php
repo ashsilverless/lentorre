@@ -32,9 +32,9 @@ get_header();?>
 
                     <div class="col-6">
 
-                        <h3 class="heading-secondary heading-secondary__sm"><?php the_field('sub_heading');?></h3>
+                        <h3 class="heading-secondary heading-secondary__sm contrast-helper"><?php the_field('sub_heading');?></h3>
 
-                        <h2 class="heading-primary heading-primary__xl heading-primary__bold"><?php the_field('heading');?></h2>
+                        <h2 class="heading-primary heading-primary__xl heading-primary__bold contrast-helper"><?php the_field('heading');?></h2>
 
                     </div>
 
