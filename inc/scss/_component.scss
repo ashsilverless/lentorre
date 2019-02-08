@@ -9,11 +9,18 @@
     justify-content: center;
     text-align: center;
     background: hsl(29, 33%, 90%);
-}
 
-svg {
-    width:10em;
-    height: 10em;
+    p {
+        text-transform: uppercase;
+        color: hsl(32, 6%, 50%);
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+    svg {
+        width:10em;
+        height: 10em;
+    }
 }
 
 @-webkit-keyframes svg_pulse {
@@ -59,12 +66,6 @@ svg {
   animation-delay: 4.5s;
 }
 
-p {
-    text-transform: uppercase;
-    color: hsl(32, 6%, 50%);
-    font-weight: 900;
-    letter-spacing: 2px;
-}
 
 .button {
     position: relative;
