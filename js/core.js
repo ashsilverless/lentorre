@@ -51,13 +51,10 @@ $(document).ready(function( $ ) {
     var currentHour = localStorage.getItem('current');
     $(selectedHour).addClass('active');
 
-
-
 if ($(".hour").hasClass("active")) {
     $('.timeline').addClass('clicked');
     $('.hour.active').find('.time-wrapper').attr('id', 'value');
 }
-
 
 $('#prev-time').click(function() {
 var selectedHour = '#' + $(this).attr('class');
@@ -68,9 +65,6 @@ $('#next-time').click(function() {
 var selectedHour = '#' + $(this).attr('class');
 localStorage.setItem('new', selectedHour);
 });
-
-
-
 
 $('.header-inner__brand').click(function() {
   localStorage.clear();
