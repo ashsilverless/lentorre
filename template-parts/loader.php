@@ -60,7 +60,7 @@ svg {
   animation-delay: 4.5s;
 }
 
-p {
+p.loading-text {
     text-transform: uppercase;
     color: hsl(32, 6%, 50%);
     font-weight: 900;
@@ -79,6 +79,6 @@ p {
     <circle class="pulse four" fill="#E21A9E" stroke-miterlimit="10" cx="40" cy="40" r="14"/>
 </svg>
 
- <p>Loading</p>
+ <p class="loading-text">Loading</p>
 
 </div>
