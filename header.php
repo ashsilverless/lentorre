@@ -21,7 +21,9 @@
 
 <body <?php body_class(); ?>>
 
-<div class="trans"></div>
+<div class="trans">
+<?php get_template_part( 'template-parts/loader');?>
+</div>
 
     <div id="page" class="site-wrapper">
 
