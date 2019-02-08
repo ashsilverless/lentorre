@@ -171,29 +171,29 @@
     opacity: 1;
 }
 
-#hour-1 #hour { transform: rotate(30deg);}
-#hour-2 #hour { transform: rotate(60deg);}
-#hour-3 #hour { transform: rotate(90deg);}
-#hour-4 #hour { transform: rotate(120deg);}
-#hour-5 #hour { transform: rotate(150deg);}
-#hour-6 #hour { transform: rotate(180deg);}
-#hour-7 #hour { transform: rotate(210deg);}
-#hour-8 #hour { transform: rotate(240deg);}
-#hour-9 #hour { transform: rotate(270deg);}
-#hour-10 #hour { transform: rotate(300deg);}
-#hour-11 #hour { transform: rotate(330deg);}
-#hour-12 #hour { transform: rotate(0deg);}
-#hour-13 #hour { transform: rotate(30deg);}
-#hour-14 #hour { transform: rotate(60deg);}
-#hour-15 #hour { transform: rotate(90deg);}
-#hour-16 #hour { transform: rotate(120deg);}
-#hour-17 #hour { transform: rotate(150deg);}
-#hour-18 #hour{ transform: rotate(180deg);}
-#hour-19 #hour { transform: rotate(210deg);}
-#hour-20 #hour { transform: rotate(240deg);}
-#hour-21 #hour { transform: rotate(270deg);}
-#hour-22 #hour { transform: rotate(300deg);}
-#hour-23 #hour { transform: rotate(330deg);}
+#hour-1 #hour, .hour-1 #clock #hour { transform: rotate(30deg);}
+#hour-2 #hour, .hour-2 #clock #hour { transform: rotate(60deg);}
+#hour-3 #hour, .hour-3 #clock #hour { transform: rotate(90deg);}
+#hour-4 #hour, .hour-4 #clock #hour { transform: rotate(120deg);}
+#hour-5 #hour, .hour-5 #clock #hour { transform: rotate(150deg);}
+#hour-6 #hour, .hour-6 #clock #hour { transform: rotate(180deg);}
+#hour-7 #hour, .hour-7 #clock #hour { transform: rotate(210deg);}
+#hour-8 #hour, .hour-8 #clock #hour { transform: rotate(240deg);}
+#hour-9 #hour, .hour-9 #clock #hour { transform: rotate(270deg);}
+#hour-10 #hour, .hour-10 #clock #hour { transform: rotate(300deg);}
+#hour-11 #hour, .hour-11 #clock #hour { transform: rotate(330deg);}
+#hour-12 #hour, .hour-12 #clock #hour { transform: rotate(0deg);}
+#hour-13 #hour, .hour-13 #clock #hour { transform: rotate(30deg);}
+#hour-14 #hour, .hour-14 #clock #hour { transform: rotate(60deg);}
+#hour-15 #hour, .hour-15 #clock #hour { transform: rotate(90deg);}
+#hour-16 #hour, .hour-16 #clock #hour { transform: rotate(120deg);}
+#hour-17 #hour, .hour-17 #clock #hour { transform: rotate(150deg);}
+#hour-18 #hour, .hour-18 #clock #hour { transform: rotate(180deg);}
+#hour-19 #hour, .hour-19 #clock #hour { transform: rotate(210deg);}
+#hour-20 #hour, .hour-20 #clock #hour { transform: rotate(240deg);}
+#hour-21 #hour, .hour-21 #clock #hour { transform: rotate(270deg);}
+#hour-22 #hour, .hour-22 #clock #hour { transform: rotate(300deg);}
+#hour-23 #hour, .hour-23 #clock #hour { transform: rotate(330deg);}
 
 
 .quote {

@@ -24,6 +24,22 @@ get_header();?>
 
         <div class="front-image" style="background-image: url(<?php echo $frontImg['url']; ?>);"></div>
 
+        <div class="page-controls">
+
+            <a href="<?php the_field('previous_page');?>" id="prev-time" class="<?php the_field('hour_prev');?>">
+
+                <?php get_template_part( 'template-parts/svg', 'clock' );?>
+
+            </a>
+
+            <a href="<?php the_field('next_page');?>" id="next-time" class="<?php the_field('hour_next');?>">
+
+                <?php get_template_part( 'template-parts/svg', 'clock' );?>
+
+            </a>
+
+        </div>
+
         <div class="headline">
 
             <div class="container">

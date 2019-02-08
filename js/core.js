@@ -51,16 +51,34 @@ $(document).ready(function( $ ) {
     var currentHour = localStorage.getItem('current');
     $(selectedHour).addClass('active');
 
+
+
 if ($(".hour").hasClass("active")) {
     $('.timeline').addClass('clicked');
     $('.hour.active').find('.time-wrapper').attr('id', 'value');
 }
+
+
+$('#prev-time').click(function() {
+var selectedHour = '#' + $(this).attr('class');
+localStorage.setItem('new', selectedHour);
+});
+
+$('#next-time').click(function() {
+var selectedHour = '#' + $(this).attr('class');
+localStorage.setItem('new', selectedHour);
+});
+
+
+
 
 $('.header-inner__brand').click(function() {
   localStorage.clear();
 });
 
 });
+
+
 
 /* ADD CLASS ON SCROLL*/
 
@@ -223,7 +241,7 @@ for(var i=0; i < times; i++){
         targetDiv.textContent = mins;
         var element = document.getElementById("hour-" + begintime);
         element.classList.add("current");
-
+        element.classList.add("now");
     }
 begintime++;
 endtime++;
@@ -239,5 +257,8 @@ if (grabTime.length >= 3) {
 if (grabTime.length < 3) {
 contentPanel.textContent = "Right now";
 }
+
+//var pivotHour = document.getElementsByClassName('active')[0].id
+console.log(element);
 
 });
