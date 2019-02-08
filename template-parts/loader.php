@@ -12,7 +12,7 @@
     background: hsl(29, 33%, 90%);
 }
 
-svg {
+svg.svg-pulse {
     width:10em;
     height: 10em;
 }
