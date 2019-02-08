@@ -213,3 +213,58 @@
     line-height: 1em;
     opacity: 1;
 }
+
+#kglogo {
+    fill:white;
+    max-width: 250px;
+    opacity:0;
+    transition: opacity 3s ease-in-out;
+    transition-delay: 1.5s;
+}
+
+.loaded #kglogo {
+    opacity:1;
+}
+
+
+.logo-holder {
+    text-align: center;
+    margin-top: -10px;
+
+  #logo {
+    width:80px;
+    height:30px;
+  }
+
+  #silverless {
+    opacity:0.6;
+    transition:opacity 0.5s ease-in-out;
+
+    path {
+        fill:$brand-dark-sand;
+    }
+  }
+
+  #created {
+    opacity:0;
+    transform: translateY(50px);
+    transition: 1s transform ease, 2s opacity ease;
+
+    path {
+        fill:$brand-dark-sand;
+    }
+  }
+
+  &:hover {
+    cursor:pointer;
+
+    #silverless {
+      opacity:0.8;
+    }
+
+    #created {
+      opacity:0.8;
+      transform: translateY(0);
+    }
+  }
+}
