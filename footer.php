@@ -27,7 +27,7 @@
 
             <div class="row">
 
-                <div class="col-4 socials">
+                <div class="col-lg-4 socials">
 
                     <?php if( have_rows('social_links', 'option') ): while( have_rows('social_links', 'option') ): the_row(); ?>
 
@@ -37,7 +37,7 @@
 
                 </div>
 
-                <div class="col-4">
+                <div class="col-lg-4">
 
                     <div class="logo-holder">
         <a href="https://silverless.co.uk">
@@ -130,7 +130,7 @@
 
                 </div>
 
-                <div class="col-4 socket__colophon">
+                <div class="col-lg-4 socket__colophon">
 
                     &copy; Lentorre Lodge <?php echo date ('Y');?>
 

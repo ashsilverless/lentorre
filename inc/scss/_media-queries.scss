@@ -9,9 +9,9 @@
   z-index: 9999;
   top:0;
 }*/
- /*---GLOBALS---*/ 
+ /*---GLOBALS---*/
 
-/*---HEADER---*/ 
+/*---HEADER---*/
 
 /*---CONTENT---*/
 
@@ -29,15 +29,15 @@
     z-index: 9999;
     top:0;
   }*/
-  
- /*---GLOBALS---*/ 
- 
+
+ /*---GLOBALS---*/
+
  /*---HEADER---*/
 
 /*---CONTENT---*/
 
 /*---FOOTER---*/
-  
+
 }/*---end medium mq---*/
 
 
@@ -54,12 +54,20 @@
 
 /*---GLOBALS---*/
 
+body {
+    font-size: 0.85rem
+}
+
 /*---HEADER---*/
 
 /*---CONTENT---*/
-  
+
 /*---FOOTER---*/
 
+.socials,
+.socket__colophon {
+    text-align: center;;
+}
 
 }/*---end small mq---*/
 
@@ -73,16 +81,140 @@
     z-index: 9999;
     top:0;
   }*/
-  
+
 /*---GLOBALS---*/
 
 /*---HEADER---*/
 
+header {
+    display: block;
+}
+
+.header-inner__contact {
+    display: none;
+}
+
+.header-inner__brand {
+  text-align: left;
+  transition: opacity 0.5s ease;
+}
+
+.header-inner .row {
+  grid-template-columns: 1fr 1fr;
+}
+
+.timeline {
+  width: calc(100% - 3em);
+  margin: 0 1.5em 10px;
+}
+
+.timeline a {
+    border-bottom: 1px solid $brand-pink;
+}
+
+.timeline .hour {
+    width:0;
+    height:0;
+    overflow:hidden;
+}
+
+.timeline .hour .link {
+  bottom: -2px;
+}
+
+.timeline .hour.current,
+.timeline .hour.active
+ {
+    width:100%;
+    height:50px;
+    overflow: visible;
+}
+
+.page-controls {
+  top: initial;
+  bottom: 24px;
+}
+
+.page-controls a {
+    border-bottom: 1px solid $brand-pink;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    min-height: 100vh;
+    background: $brand-dark-sand !important;
+    opacity: 1;
+    z-index: 1000;
+    transition: left 0.5s ease;
+}
+
+.menuOpen .navigation {
+    left:0;
+}
+
+.menuOpen .header-inner__brand {
+    opacity: 0;
+}
+
+.main-menu ul {
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,auto);
+    align-content: center;
+}
+
+.main-menu a {
+  font-size: 1.5em;
+  line-height: 3em;
+  color: white;
+}
+
+.main-menu .current_page_item>a {
+  color: $brand-sand;
+}
+
 
 /*---CONTENT---*/
 
+.hero__upper {
+    display: grid;
+    height: 100%;
+    align-content: end;
+}
+
+.hero .headline {
+  margin-bottom: 10em;
+}
+
+.sub-hero {
+  margin-bottom: 0;
+  padding-top:5em;
+}
+
+.sub-hero__detail {
+  grid-template-columns: 1fr;
+  transform: none !important;
+  margin-bottom: 3em;
+}
+
+.gallery a,
+.large-gallery a,
+.leaders__item {
+    min-height: 10em;
+}
+
+.multi-col {
+  column-count: 1;
+}
+
+.team-wrapper__person {
+    height: 8em;
+}
 
 /*---FOOTER---*/
-  
-}/*---end extra small mq---*/
 
+}/*---end extra small mq---*/

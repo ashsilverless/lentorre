@@ -22,7 +22,7 @@ get_header();?>
 
         <div class="row mb3">
 
-        <div class="col-3 offset-1">
+        <div class="col-sm-3 offset-sm-1">
 
             <p><?php the_field('telephone_number', 'option');?></p>
 
@@ -30,7 +30,7 @@ get_header();?>
 
         </div>
 
-        <div class="col-7">
+        <div class="col-sm-7">
 
             <?php echo do_shortcode('[contact-form-7 id="537" title="Main Contact Form"]');?>
 
@@ -40,6 +40,6 @@ get_header();?>
 
     </div><!--content-block-->
 
-    <?php get_template_part( 'template-parts/signpost');?> 
+    <?php get_template_part( 'template-parts/signpost');?>
 
 <?php get_footer();?>

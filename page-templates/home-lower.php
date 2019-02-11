@@ -54,7 +54,7 @@ $mapImg = get_field('map_image', 569);
       while( have_rows('leaders', 569) ): the_row();
       $leaderImg = get_sub_field('image', 569);?>
 
-      <div class="col-6">
+      <div class="col-sm-6">
 
         <div class="leaders__item" style="background-image: url(<?php echo $leaderImg['url']; ?>);">
 

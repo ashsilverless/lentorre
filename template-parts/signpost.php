@@ -1,18 +1,18 @@
     <div class="signpost">
 
         <div class="row no-gutters">
-   
-            <div class="col-6 signpost__left">           
-                     
-                <a href="<?php the_field('signpost_left_target', 'option');?>"></a>    
-                
+
+            <div class="col-sm-6 signpost__left">
+
+                <a href="<?php the_field('signpost_left_target', 'option');?>"></a>
+
                 <div class="signpost__left__content heading-primary heading-primary__xs heading-primary__caps">
-                    
+
                     <?php the_field('signpost_left_text', 'option');?>
-                    
+
                 </div>
 
-                
+
                 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 	 viewBox="0 0 1000 577" enable-background="new 0 0 1000 577" xml:space="preserve">
                 <g>
@@ -113,9 +113,9 @@
 
             </div>
 
-            <div class="col-6 signpost__right">                
+            <div class="col-sm-6 signpost__right">                
 
-                <a href="<?php the_field('signpost_right_target', 'option');?>"></a>    
+                <a href="<?php the_field('signpost_right_target', 'option');?>"></a>
 
                 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 839.2 280" enable-background="new 0 0 839.2 280" xml:space="preserve">
@@ -151,14 +151,14 @@
 </svg>
 
                 <div class="signpost__right__content heading-primary heading-primary__xs heading-primary__caps">
-                    
-                    <?php the_field('signpost_right_text', 'option');?>                    
-                    
+
+                    <?php the_field('signpost_right_text', 'option');?>
+
                 </div>
-                
+
 
             </div>
-                 
-        </div><!--r-->       
+
+        </div><!--r-->
 
     </div><!--signpost-->

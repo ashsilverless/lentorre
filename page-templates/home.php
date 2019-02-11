@@ -46,7 +46,7 @@ get_header();?>
 
                 <div class="row">
 
-                    <div class="col-6">
+                    <div class="col-sm-6">
 
                         <h3 class="heading-secondary heading-secondary__sm contrast-helper"><?php the_field('sub_heading');?></h3>
 
@@ -97,7 +97,7 @@ get_header();?>
 
             <div class="row">
 
-                <div class="col-6 vertical-center">
+                <div class="col-6 vertical-center d-none d-sm-block">
 
                     <a href="/contact" class="button button__prompt button__dark-hover">
                         <span>Book Now</span>
@@ -105,7 +105,7 @@ get_header();?>
 
                 </div>
 
-                <div class="col-6 vertical-center">
+                <div class="col-sm-6 col-12 vertical-center">
 
                     <p><?php the_field('teaser');?></p>
 
@@ -148,7 +148,7 @@ get_header();?>
 
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-sm-6">
 
                         <div class="lodge-now">
 
@@ -164,7 +164,7 @@ get_header();?>
 
                     </div>
 
-                    <div class="col-6 vertical-center">
+                    <div class="col-sm-6 vertical-center">
 
                         <?php the_field('text_content');?>
 
