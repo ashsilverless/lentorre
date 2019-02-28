@@ -17,6 +17,12 @@ function lentorre_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'lentorre_scripts' );
 
+
+wp_register_script( 'jquery3.2.1', 'https://code.jquery.com/jquery-3.2.1.min.js' );
+wp_add_inline_script( 'jquery3.2.1', 'var jQuery3_2_1 = $.noConflict(true);' );
+wp_enqueue_script( 'plugin-javascript', plugins_url( 'js.js', __FILE__ ), array( 'jquery3.2.1' ) );
+
+
 //** Add Owl Carousel Assets
 
 function sl_owl_assets() {

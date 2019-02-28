@@ -256,3 +256,5 @@ contentPanel.textContent = "Right now";
 console.log(element);
 
 });
+
+document.addEventListener('touchstart', onTouchStart, {passive: true});
