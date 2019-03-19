@@ -66,9 +66,9 @@ get_header();?>
 
         <div class="timeline">
 
-            <a href="/11pm-3am"><div class="hour" id='hour-1'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">1am</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
-            <a href="/11pm-3am"><div class="hour" id='hour-2'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">2am</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
-            <a href="/11pm-3am"><div class="hour" id='hour-3'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">3am</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
+            <a href="/1am"><div class="hour" id='hour-1'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">1am</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
+            <a href="/2am"><div class="hour" id='hour-2'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">2am</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
+            <a href="/3am"><div class="hour" id='hour-3'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">3am</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
             <a href="/4am"><div class="hour" id='hour-4'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">4am</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
             <a href="/5am"><div class="hour" id='hour-5'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">5am</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
             <a href="/6am"><div class="hour" id='hour-6'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">6am</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
@@ -88,8 +88,8 @@ get_header();?>
             <a href="/8pm"><div class="hour" id='hour-20'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">8pm</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
             <a href="/9pm"><div class="hour" id='hour-21'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">9pm</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
             <a href="/10pm"><div class="hour" id='hour-22'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">10pm</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
-            <a href="/11pm-3am"><div class="hour" id='hour-23'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">11pm</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
-            <a href="/11pm-3am"><div class="hour" id='hour-00'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">Midnight</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
+            <a href="/11pm"><div class="hour" id='hour-23'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">11pm</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
+            <a href="/midnight"><div class="hour" id='hour-00'><div class="link"></div><div class="time-wrapper"><span class="hour-mark">Midnight</span><span></span><?php get_template_part( 'template-parts/svg', 'clock' );?></div></div></a>
 
         </div>
 
