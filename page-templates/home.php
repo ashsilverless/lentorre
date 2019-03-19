@@ -100,7 +100,7 @@ get_header();?>
                 <div class="col-6 vertical-center d-none d-sm-block">
 
                     <a href="/contact" class="button button__prompt button__dark-hover">
-                        <span>Book Now</span>
+                        <span>Get In Touch</span>
                     </a>
 
                 </div>
