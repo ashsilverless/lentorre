@@ -12,6 +12,9 @@
         background:$brand-dark-sand;
         z-index: 0;
         overflow: hidden;
+        display: grid;
+        align-items: center;
+        
         &:before {
             @include childOverlay;
             top:initial;
