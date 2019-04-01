@@ -5,7 +5,7 @@
 get_header();?>
 
     <?php
-        $headerImg = get_field('header_image', '1067');
+        $headerImg = get_field('header_image', '1422');
     ?>
 
 <div class="container">
