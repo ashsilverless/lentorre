@@ -7,7 +7,15 @@
 
 ?>
 <!doctype html>
+
+
 <html <?php language_attributes(); ?>>
+
+<!--[if IE]>
+<script type="text/javascript">
+window.location = "http://www.google.com/";
+</script>
+<![endif]-->  
 <head>
  	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">   

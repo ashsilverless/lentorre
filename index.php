@@ -8,6 +8,39 @@
 
 <?php get_template_part( 'template-parts/loader');?>
 
+<script type="text/javascript">
+
+
+function detectIE() {
+  var ua = window.navigator.userAgent;
+  
+  var msie = ua.indexOf('MSIE ');
+  if (msie > 0) {
+    return true;
+  }
+
+  var trident = ua.indexOf('Trident/');
+  if (trident > 0) {
+    return true;
+  }
+
+  var edge = ua.indexOf('Edge/');
+  if (edge > 15) {
+    return false;
+  }
+
+  // other browser
+  return false;
+}
+
+if(detectIE()){
+    window.location.replace("http://lentorre-lodge.local/old-browser");
+} else {
+  //document.getElementById("ie").innerHTML = "No it's not!";
+}
+
+</script>
+
 <script>
     var today = new Date().getHours();
 
