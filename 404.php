@@ -24,7 +24,7 @@ get_header();?>
         <p style="display:block; width:100%; text-align:center;">Not to worry, we'll get you back on track in a jiffy</p>
         </div>
 <div class="row"  style="display:block; text-align:center;">
-        <a href="<?php ?>" class="button button__prompt button__dark-hover mt1 mb1">
+        <a href="<?php echo get_home_url(); ?>" class="button button__prompt button__dark-hover mt1 mb1">
         <span>Go Back Home</span>
         </a>            
 
