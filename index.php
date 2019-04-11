@@ -44,7 +44,13 @@ if(detectIE()){
 <script>
     var today = new Date().getHours();
 
-    if (today >= 0 && today < 3) { window.location.replace("/11pm-3am");}
+    if (today >= 0 && today < 1) { window.location.replace("/midnight");}
+
+    if (today >= 1 && today < 2) { window.location.replace("/1am");}
+
+    if (today >= 2 && today < 3) { window.location.replace("/2am");}
+
+    if (today >= 3 && today < 4) { window.location.replace("/3am");}
 
     if (today >= 4 && today < 5) { window.location.replace("/4am");}
 
@@ -84,6 +90,6 @@ if(detectIE()){
 
     if (today >= 22 && today < 23) { window.location.replace("/10pm");}
 
-    if (today >= 23 && today < 24) { window.location.replace("/11pm-3am");}
+    if (today >= 23 && today < 24) { window.location.replace("/11pm");}
 
 </script>
