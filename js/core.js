@@ -36,19 +36,19 @@ $("html").delay(100).queue(function(next) {
 /* HANDLER FOR TIMELINE LINKS*/
 
 $('.hour').on('click', function () {
-    localStorage.clear();
-    var getFav = localStorage.acti;
+    sessionStorage.clear();
+    var getFav = sessionStorage.acti;
     var selectedHour = '#' + $(this).attr('id');
     var currentHour = $('.hour'+'.current').attr('id');
 
-    localStorage.setItem('new', selectedHour);
-    localStorage.setItem('current', currentHour);
+    sessionStorage.setItem('new', selectedHour);
+    sessionStorage.setItem('current', currentHour);
 
 });
 
 $(document).ready(function( $ ) {
-    var selectedHour = localStorage.getItem('new');
-    var currentHour = localStorage.getItem('current');
+    var selectedHour = sessionStorage.getItem('new');
+    var currentHour = sessionStorage.getItem('current');
     $(selectedHour).addClass('active');
 
 if ($(".hour").hasClass("active")) {
@@ -58,16 +58,16 @@ if ($(".hour").hasClass("active")) {
 
 $('#prev-time').click(function() {
 var selectedHour = '#' + $(this).attr('class');
-localStorage.setItem('new', selectedHour);
+sessionStorage.setItem('new', selectedHour);
 });
 
 $('#next-time').click(function() {
 var selectedHour = '#' + $(this).attr('class');
-localStorage.setItem('new', selectedHour);
+sessionStorage.setItem('new', selectedHour);
 });
 
 $('.header-inner__brand').click(function() {
-  localStorage.clear();
+  sessionStorage.clear();
 });
 
 });
