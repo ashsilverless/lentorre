@@ -353,9 +353,9 @@
         padding: 2em;
         margin: 3px;
         justify-content: center;
-        flex-direction: column;
-        overflow: hidden;
-        z-index: 10;
+        flex-direction: column; 
+        overflow: hidden; 
+        z-index: 10; 
         &:before {
             @include childOverlay;
             @include opacity;

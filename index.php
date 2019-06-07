@@ -5,7 +5,7 @@
  * @package Lentorre Lodge
  */
 ?>
-
+<html>
 <?php get_template_part( 'template-parts/loader');?>
 
 <script type="text/javascript">
@@ -94,3 +94,4 @@ if(detectIE()){
     if (today >= 23 && today < 24) { window.location.replace("/11pm");}
 
 </script>
+</html>
