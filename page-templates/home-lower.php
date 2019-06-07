@@ -62,7 +62,7 @@ $mapImg = get_field('map_image', 569);
 
           <?php the_sub_field('content', 569);?>
 
-          <div><!--button was spanning whole grid.  this div stops it spanning-->
+          <div class="button-wrapper"><!--button was spanning whole grid.  this div stops it spanning-->
 
             <a href="<?php the_sub_field('button_target', 569);?>   " class="button">
                 <span><?php the_sub_field('button_text', 569);?></span>

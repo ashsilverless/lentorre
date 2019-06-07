@@ -21,17 +21,15 @@ var minuterotation = mins * 6;
 var hourrotation = hours * 30;
 /* ADD CLASS ON LOAD*/
 
-$("html").delay(100).queue(function(next) {
-    $(this).addClass("loaded");
-    next();
+setTimeout(function() {
+    $("html").addClass("loaded");
     $('div.current').find('#hour').css({
         'transform': 'rotate('+hourrotation+'deg)',
     });
     $('div.current').find('#min').css({
         'transform': 'rotate('+minuterotation+'deg)',
     });
-
-});
+}, 100);
 
 /* HANDLER FOR TIMELINE LINKS*/
 
@@ -71,8 +69,6 @@ $('.header-inner__brand').click(function() {
 });
 
 });
-
-
 
 /* ADD CLASS ON SCROLL*/
 

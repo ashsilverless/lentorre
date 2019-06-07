@@ -172,12 +172,9 @@ get_header();?>
 
                     </div>
 
-
                 </div><!--r-->
 
             </div><!--c-->
-
-
 
         </div>
 

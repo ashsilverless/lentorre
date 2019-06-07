@@ -4,10 +4,8 @@
  *
  * @package Lentorre Lodge
  */
-
 ?>
 <!doctype html>
-
 
 <html <?php language_attributes(); ?>>
 
@@ -49,37 +47,35 @@ window.location = "http://www.google.com/";
 
             <div class="row no-gutters">
 
+                <div class="header-inner__contact">
 
+                        <p><?php the_field('telephone_number', 'option');?></p>
 
-                    <div class="header-inner__contact">
+                        <p><?php the_field('email_address', 'option');?></p>
 
-                            <p><?php the_field('telephone_number', 'option');?></p>
+                </div>
 
-                            <p><?php the_field('email_address', 'option');?></p>
+                <div class="header-inner__brand">
 
-                    </div>
+                    <?php $brandImg = get_field('logo', 'option');?>
 
-                    <div class="header-inner__brand">
+                    <a href="<?php echo get_site_url(); ?>">
 
-                        <?php $brandImg = get_field('logo', 'option');?>
+                        <img src="<?php echo $brandImg['url']; ?>"/>
 
-                        <a href="<?php echo get_site_url(); ?>">
+                    </a>
 
-                            <img src="<?php echo $brandImg['url']; ?>"/>
+                </div>
 
-                        </a>
+                <div class="header-inner__trigger hamburger hamburger--collapse">
 
-                    </div>
+                    <div class="hamburger-box">
 
-                    <div class="header-inner__trigger hamburger hamburger--collapse">
-
-                        <div class="hamburger-box">
-
-                            <div class="hamburger-inner"></div>
-
-                        </div>
+                        <div class="hamburger-inner"></div>
 
                     </div>
+
+                </div>
 
                 </div>
 
@@ -107,4 +103,4 @@ window.location = "http://www.google.com/";
 
 </header>
 
-  <main>
+<main>

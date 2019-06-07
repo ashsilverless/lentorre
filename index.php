@@ -42,6 +42,7 @@ if(detectIE()){
 </script>
 
 <script>
+
     var today = new Date().getHours();
 
     if (today >= 0 && today < 1) { window.location.replace("/midnight");}
