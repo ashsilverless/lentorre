@@ -6,10 +6,8 @@
  */
 ?>
 <html>
-<?php get_template_part( 'template-parts/loader');?>
 
 <script type="text/javascript">
-
 
 function detectIE() {
   var ua = window.navigator.userAgent;
@@ -94,4 +92,7 @@ if(detectIE()){
     if (today >= 23 && today < 24) { window.location.replace("/11pm");}
 
 </script>
+
+<?php get_template_part( 'template-parts/loader');?>
+
 </html>

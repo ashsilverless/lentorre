@@ -31,11 +31,7 @@ window.location = "http://www.google.com/";
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-
-<div class="trans">
-<?php get_template_part( 'template-parts/loader');?>
-</div>
+<body <?php body_class(); ?> onunload="">
 
     <div id="page" class="site-wrapper">
 
